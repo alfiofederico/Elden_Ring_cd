@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oldenburg', cursive;
+  background-image: url('https://images4.alphacoders.com/115/1151249.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  color: #998c8c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+body * {
+  z-index: 1;
+}
+
+
+
+
+h1 {
+  font-size: 40px;
+  margin: -80px 0 40px;
+}
+
+.countdown {
+  /* display: flex; */
+  display: none;
+  transform: scale(2);
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.time h2 {
+  margin: 0 0 5px;
+}
+
+
+.year {
+  font-size: 50px;
+  z-index: -1;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.footer {
+  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#4566;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .time {
+    margin: 5px;
+  }
+
+  .time h2 {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .time small {
+    font-size: 10px;
+  }
+
+  .year {
+    font-size: 15px;
+    bottom: 200px;
+  }
+
+body {
+  background-size: cover;
+  background-image: url('https://i.redd.it/y1udzivcql471.png');
+}
+
+
+}
+
