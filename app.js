@@ -11,7 +11,7 @@ const loading = document.getElementById('loading');
 
 const currentYear = new Date().getFullYear();
 
-const releaseTime = new Date(`February 25 ${currentYear + 1} 00:00:00`);
+const releaseTime = new Date(`February 25 ${currentYear } 00:00:00`);
 let interval;
 
 /* year.innerText = 'July 17th 2020' */;
